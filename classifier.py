@@ -4,17 +4,10 @@ url = "dataset/"
 
 data = turi.image_analysis.load_images(url)
 
-data["path"].apply(lambda path: "Arvore" if "arvore" in path)
-data["path"].apply(lambda path: "Casa" if "casa" in path)
-data["path"].apply(lambda path: "Celular" if "celular" in path)
-data["path"].apply(lambda path: "Computador" if "computador" in path)
-data["path"].apply(lambda path: "Copo" if "copo" in path)
-data["path"].apply(lambda path: "Floresta" if "floresta" in path)
-data["path"].apply(lambda path: "Monitor" if "monitor" in path)
-data["path"].apply(lambda path: "Mouse" if "mouse" in path)
-data["path"].apply(lambda path: "Piscina" if "piscina" in path)
+data["imageType"] = data["path"].apply(lambda path: "Arvore" if "arvore" in path else "Casa" if "casa" in path else "Celular" if "celular" in path else "Computador" if "computador" in path else "Copo" if "copo" in path else "Floresta" if "floresta" in path else "Monitor" if "monitor" in path else "Mouse" if "mouse" in path else "Piscina")
 
-data["imageType"] = data["path"]
+
+
 
 data.save("imageType.sframe")
 
