@@ -20,6 +20,9 @@ Este projeto tem por base gerar modelos CoreML para classificação de objetos a
 - Televisores
 - Piscinas
 - Praias
+- Carro
+- Moto
+- Comida
 
 <h3><b>Requerimentos:</b><br></h3>
 - Python<br>
