@@ -5,9 +5,8 @@ url = "dataset/"
 
 data = turi.image_analysis.load_images(url)
 
-#data["imageType"] = data["path"].apply(lambda path: "Android" if "android" in path else "Arvore" if "arvore" in path else "Cadeira" if "cadeira" in path else "Casa" if "casa" in path else "Celular" if "celular" in path else "Computador" if "computador" in path else "Copo" if "copo" in path else "Floresta" if "floresta" in path else "iPhone" if "iPhone" in path else "Mesa" if "mesa" in path else "Monitor" if "monitor" in path else "Mouse" if "mouse" in path else "Paisagem" if "paisagem" in path else "Piscina" if "piscina" in path else "Praia" if "praia" in path else "Televisao" if "televisao" in path else "Comida" if "comida" in path else "Carro" if "carro" in path else "Moto" if "moto" in path else "Pessoa") 
  
-labels = ['android', 'arvore', 'cadeira', 'carro', 'casa', 'celular', 'comida', 'computador', 'copo', 'floresta', 'iPhone', 'mesa', 'monitor', 'moto', 'mouse', 'paisagem', 'pessoa', 'piscina', 'praia', 'televisao']  
+labels = ['android', 'arvore', 'cadeira', 'calculadora','camiseta','caneca','carro', 'casa', 'celular', 'comida', 'computador', 'copo', 'floresta','guarda-chuva', 'iPhone', 'mesa', 'monitor', 'moto', 'mouse', 'paisagem', 'peixe','pessoa', 'piscina','pneu', 'praia','rosto', 'televisao']  
       
 def get_label(path, labels=labels):  
     for label in labels:  
