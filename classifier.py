@@ -24,7 +24,7 @@ dataBuffer = turi.SFrame("imageType.sframe")
 train_data, test_data = dataBuffer.random_split(0.9)  
  
 # Create a model  
-model = turi.image_classifier.create(train_data, target='label', max_iterations=1000, model="resnet-50")  
+model = turi.image_classifier.create(train_data, target='label', model="resnet-50")  
  
 # Save predictions to an SFrame (class and corresponding class-probabilities)  
 predictions = model.classify(test_data)  
