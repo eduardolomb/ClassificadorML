@@ -1,12 +1,12 @@
 import turicreate as turi
 # coding=<utf8>
 
-url = "dataset/"
+url = "Dataset/"
 
 data = turi.image_analysis.load_images(url)
 
  
-labels = ['android', 'arvore', 'cadeira', 'calculadora','camiseta','caneca','carro', 'casa', 'celular', 'comida', 'computador', 'copo', 'floresta','guarda-chuva', 'iPhone', 'mesa', 'monitor', 'moto', 'mouse', 'paisagem', 'peixe','pessoa', 'piscina','pneu', 'praia','rosto', 'televisao']  
+labels = ['android','arvore','cadeira','calculadora','camiseta','caneca','carro','casa','celular','comida','computador','copo','floresta','guardachuva','iPhone','mesa','monitor','moto','mouse','paisagem','peixe','pessoa','piscina','pneu','praia','rosto','televisao']  
       
 def get_label(path, labels=labels):  
     for label in labels:  
