@@ -8,6 +8,7 @@ Este projeto tem por base gerar modelos CoreML para classificação de objetos a
 - Celulares iPhone
 - Celulares Android
 - Cadeiras
+- Calculadoras
 - Mesas
 - Casas
 - Copos
@@ -19,6 +20,10 @@ Este projeto tem por base gerar modelos CoreML para classificação de objetos a
 - Mouses
 - Televisores
 - Piscinas
+- Peixes
+- Pessoas
+- Canecas
+- Pneu
 - Praias
 - Carro
 - Moto
