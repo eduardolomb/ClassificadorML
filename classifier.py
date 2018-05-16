@@ -6,7 +6,7 @@ url = "Dataset/"
 data = turi.image_analysis.load_images(url)
 
  
-labels = ['android','arvore','cadeira','calculadora','camiseta','caneca','carro','casa','celular','comida','computador','copo','floresta','guardachuva','iPhone','mesa','monitor','moto','mouse','paisagem','peixe','pessoa','piscina','pneu','praia','rosto','televisao']  
+labels = ['arvore','calculadora','camiseta','caneca','carro','casa','celular','comida','computador','copo','iPhone','moto','mouse','paisagem','pessoa','piscina','praia','rosto','televisao']  
       
 def get_label(path, labels=labels):  
     for label in labels:  
